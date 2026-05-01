@@ -1,0 +1,173 @@
+<style>
+	h1 {
+	text-align: center;
+	color: red;
+	}
+	
+	body {
+		background-image: url('castle.jpg');
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-size: cover;
+		position: relative;
+		top: 7vh;
+	}
+		
+
+	
+	slide-in-text {
+		opacity: 0;
+		transform: translateX(-100%);
+		animation: slideInFromLeft 1s forwards;
+	}
+
+/*-----------Link Formating and Code------------*/
+
+	a:link {
+		color: white;
+		background-color: transparent;
+		text-decoration: none;
+	}
+
+	a:visited {
+		color: white;
+		background-color: transparent;
+		text-decoration: none;
+	}
+
+	a:hover {
+		color: #87CEEB;
+		background-color: transparent;
+		text-decoration: underline;
+	}
+
+	a:active {
+		color: white;
+		background-color: transparent;
+		text-decoration: underline;
+	}
+/*---------------------------------------------*/
+	
+	.text-format {
+	font-size: 20px;
+	position: relative;
+	right: -10px;
+	color: red;
+	}
+
+/*---------------------Heading Box Format----------------*/
+	.heading-width-box {
+	position: fixed;
+	z-index: 5670;
+	background-color:  #FF5339;
+	width: 100vw;
+	margin: 0;
+	box-sizing: border-box;
+	top: 0px;
+	}
+
+
+	.heading-length-box {
+	height: 10vh;
+	}
+/*--------------------------------------------------------*/
+
+/*---------------Offer Box Format-------------------------*/
+	.Offer-width-box {
+	position: relative;
+	z-index: -65;
+	background-color:  white;
+	width: 100vw;
+	margin: 0;
+	box-sizing: border-box;
+	top: 60vh;
+	text-align: center;
+	}
+
+	.Offer-length-box {
+	height: 120vh;
+	}
+/*--------------------------------------------------------------------*/
+
+/*---------------About Box Format-------------------------*/
+
+/*--------------------------------------------------------------------*/
+
+/*--------------Choose Box Format-------------------------------------*/
+	.Choose-width-box {
+	position: relative;
+	z-index: -65;
+	background-color:   #9A7B4F;
+	width: 100vw;
+	margin: 0;
+	box-sizing: border-box;
+	top: 5vh;
+	text-align: center;
+	}
+
+	.Choose-length-box {
+	height: 120vh;
+	}
+	body {
+	overflow-y: auto;
+	}
+/*----------------------------------IDs-----------------------------------*/	
+	#Bounce{
+	position: relative;
+	right: 20vw;
+	top: 5vh;
+	background-color: #b9484e;
+	top: 15vh;
+	border: 5px solid black;
+	padding: 32px;
+	border-radius: 19px;
+	}
+	
+	#None {
+	background-color: #FF5339;
+	border-radius: 50%;
+	position: relative;
+	top: -131vh;
+	right: -75vw;
+	width: 15vw;
+	height: 25vh;
+	z-index: 100;
+	border: 8px solid white;
+	padding: 32px;
+	}
+	
+	#Table {
+	position: relative;
+	right: -64vw;
+	top:-55vh;
+	background-color: rgb(0,0,0,0.1);
+	height: 70vh;
+	border: 5px solid black;
+	padding: 32px;
+	border-radius: 19px;
+	}
+	
+	
+	#Why {
+	position: relative;
+	right: -15vw;
+	top: 10vh;
+	font-size: 30px;
+	line-height: 5;
+	background-color: white;
+	width: 70vw;
+	border-radius: 39px;
+	text-align: center;
+	font-family: Arial Black;
+	text-decoration: underline;
+	}
+	
+	#Button {
+	position: relative;
+	top: 0vh;
+	right: -45vw;
+	}
+	
+
+
+</style>
