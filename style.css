@@ -72,20 +72,27 @@
 	}
 /*--------------------------------------------------------*/
 
+	.Footer {
+	position: fixed;
+	text-align: center;
+	box-sizing: border-box;
+	}
+
 /*---------------Offer Box Format-------------------------*/
 	.Offer-width-box {
 	position: relative;
 	z-index: -65;
 	background-color:  white;
-	width: 100vw;
+	width: 100%;
 	margin: 0;
 	box-sizing: border-box;
 	top: 60vh;
 	text-align: center;
 	}
 
+
 	.Offer-length-box {
-	height: 120vh;
+	height: 150vh;
 	}
 /*--------------------------------------------------------------------*/
 
@@ -108,19 +115,23 @@
 	.Choose-length-box {
 	height: 120vh;
 	}
+	
+	
 	body {
 	overflow-y: auto;
 	}
 /*----------------------------------IDs-----------------------------------*/	
 	#Bounce{
 	position: relative;
-	right: 20vw;
+	right: 25vw;
 	top: 5vh;
 	background-color: #b9484e;
 	top: 15vh;
 	border: 5px solid black;
 	padding: 32px;
 	border-radius: 19px;
+	height: 100px;
+	width: 50px;
 	}
 	
 	#None {
@@ -141,14 +152,15 @@
 	right: -64vw;
 	top:-55vh;
 	background-color: rgb(0,0,0,0.1);
-	height: 70vh;
+	height: 110px;
 	border: 5px solid black;
 	padding: 32px;
 	border-radius: 19px;
+	width: 50px;
 	}
 	
 	
-	#Why {
+	.Why {
 	position: relative;
 	right: -15vw;
 	top: 10vh;
@@ -164,10 +176,9 @@
 	
 	#Button {
 	position: relative;
-	top: 0vh;
+	top: -330px;
 	right: -45vw;
 	}
+
 	
-
-
 </style>
