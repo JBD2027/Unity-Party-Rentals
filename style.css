@@ -3,19 +3,7 @@
 	text-align: center;
 	color: red;
 	}
-	
-	body {
-		background-image: url('castle.jpg');
-		background-repeat: no-repeat;
-		background-attachment: fixed;
-		background-size: cover;
-		position: relative;
-		top: 7vh;
-		overflow-y: auto;
-	}
-		
 
-	
 	slide-in-text {
 		opacity: 0;
 		transform: translateX(-100%);
@@ -55,120 +43,258 @@
 	color: red;
 	}
 
-	.heading-width-box {
-	position: fixed;
-	z-index: 5670;
-	background-color:  #FF5339;
-	width: 100vw;
-	margin: 0;
-	box-sizing: border-box;
-	top: 0px;
-	}
+	body { 
 
+	margin: 0; 
 
-	.heading-length-box {
-	height: 10vh;
-	}
+	padding-top: 80px; /* room for fixed header */ 
 
+	overflow-x: hidden; 
 
-	.Footer {
-	position: fixed;
-	text-align: center;
-	box-sizing: border-box;
-	}
+	font-family: Arial, sans-serif; 
 
-/*---------------Offer Box Format-------------------------*/
+	background-size: cover; 
+
+	background-position: center; 
+	} 
+
+ /* Fixed header */ 
+
+	.heading-width-box { 
+
+	position: fixed; 
+
+	top: 0; 
+
+	left: 0; 
+
+	width: 100%; 
+
+	z-index: 1000; } 
+
+	.heading-length-box { 
+
+	height: 80px; 
+
+	} 
+
+ /* Offer section */ 
+
 	.Offer-width-box {
-	position: relative;
-	z-index: -65;
-	background-color:  white;
-	width: 100%;
-	margin: 0;
-	box-sizing: border-box;
-	top: 60vh;
-	text-align: center;
-	}
 
+	position: relative; 
 
-	.Offer-length-box {
-	height: 1000px;
-	}
+	width: 100%; 
 
-	.Choose-width-box {
-	position: relative;
-	z-index: -65;
-	background-color:   #9A7B4F;
-	width: 100vw;
-	margin: 0;
-	box-sizing: border-box;
-	top: 5vh;
-	text-align: center;
-	}
+	top: 0; padding: 40px 20px; 
 
-	.Choose-length-box {
-	height: 120vh;
-	}
+	} 
+
+	.Offer-length-box { 
+
+	height: auto; 
+
+	} 
+
+ /* Choose section */ 
+
+	.Choose-width-box { 
+
+	position: relative; 
+
+	width: 100%; 
+
+	top: 0; 
+
+	padding: 40px 20px; 
+
+	} 
+
+	.Choose-length-box { 
+
+	height: auto; 
+
+	} 
+
+ /* Cards layout */ 
+
+	#Bounce, #Table { 
+
+	position: static; 
+
+	width: 100%; 
+
+	max-width: 340px; 
+
+	margin: 20px auto; 
+
+	padding: 24px; 
+
+	border-radius: 20px; 
+
+	height: auto; 
+
+	box-sizing: border-box; 
+
+	} 
+
+ /* Bounce card */ 
+
+	#Bounce { 
+
+	background-color: #b9484e; 
+
+	border: 5px solid black; 
+
+	} 
+
+ /* Table card */ 
+
+	#Table { 
+
+	background-color: rgba(0,0,0,0.1); 
+
+	border: 5px solid black; 
+
+	} 
+
+ /* Center container for cards */ 
+
+	.cards-container { 
+
+	display: flex; 
+
+	justify-content: center; 
+
+	gap: 30px; 
+
+	flex-wrap: wrap; 
+
+	align-items: flex-start; 
+
+	} 
+
+ /* “Currently unavailable” badge */ 
+
+	#None { 
+
+	position: static; 
+
+	width: auto; 
+
+	height: auto; 
+
+	max-width: 280px; 
+
+	margin: 10px auto 0; 
+
+	padding: 16px 20px; 
+
+	border-radius: 999px; 
+
+	text-align: center; 
+
+	font-weight: bold; 
+
+	line-height: 1.3; 
+
+	background-color: #FF5339; 
+
+	border: 6px solid white; 
+
+	z-index: auto; 
+
+	} 
+
+ /* Why section */ 
+
+	.Why, #Why { 
+
+	position: static; 
+
+	width: min(900px, 92%); 
+
+	margin: 40px auto 0; 
+
+	padding: 24px; 
+
+	font-size: 1.25rem; 
+
+	line-height: 1.6; 
+
+	border-radius: 28px; 
+
+	text-align: center; 
+
+	text-decoration: underline; 
+
+	box-sizing: border-box; } 
+
+ /* Button */ 
+
+	#Button { 
+
+	position: static; 
+
+	display: block; 
+
+	margin: 30px auto 0; text-align: center; 
+
+	} 
+
+ /* Images */ 
+
+	img { 
+
+	max-width: 100%; 
+
+	height: auto; 
+
+	display: block; } 
+
+ /* Mobile adjustments */ 
+
+	@media (max-width: 768px) { 
+
+	.heading-length-box { 
+
+	height: 70px; 
 	
-	
-/*----------------------------------IDs-----------------------------------*/	
-	#Bounce{
-	position: relative;
-	right: 480px;
-	top: 5vh;
-	background-color: #b9484e;
-	top: 15vh;
-	border: 5px solid black;
-	padding: 32px;
-	border-radius: 19px;
-	height: 100px;
-	width: 50px;
-	}
-	
-	#None {
-	background-color: #FF5339;
-	border-radius: 50%;
-	position: relative;
-	top: -131vh;
-	right: -76vw;
-	width: 260px;
-	height: 260px;
-	z-index: 100;
-	border: 8px solid white;
-	padding: 50px;
-	}
-	
-	#Table {
-	position: relative;
-	right: -1290px;
-	top:-55vh;
-	background-color: rgb(0,0,0,0.1);
-	height: 170px;
-	border: 5px solid black;
-	padding: 32px;
-	border-radius: 19px;
-	width: 50px;
-	}
-	
-	
-	.Why {
-	position: relative;
-	right: -15vw;
-	top: 10vh;
-	font-size: 30px;
-	line-height: 5;
-	background-color: white;
-	width: 70vw;
-	border-radius: 39px;
-	text-align: center;
-	font-family: Arial Black;
-	text-decoration: underline;
-	}
-	
-	#Button {
-	position: relative;
-	top: -110px;
-	right: -45vw;
-	}
+	} 
+
+	body { 
+
+	padding-top: 70px; 
+
+	} 
+
+	h1 { 
+
+	font-size: 1.8rem; 
+
+	} 
+
+	.text-format { 
+
+	font-size: 16px; 
+
+	} 
+
+	#Bounce, #Table { 
+
+	max-width: 100%; 
+
+	} 
+
+	.Why, #Why { 
+
+	font-size: 1.05rem; 
+
+	padding: 20px; 
+
+	} 
+
+}
 
 	
 </style>
