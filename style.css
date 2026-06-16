@@ -44,7 +44,8 @@
 	}
 
 	body { 
-
+	background-image: url('castle.jpg');
+	
 	margin: 0; 
 
 	padding-top: 80px; /* room for fixed header */ 
@@ -293,6 +294,45 @@
 	padding: 20px; 
 
 	} 
+	
+/* Hero Section */
+	.hero-section {
+    max-width: 1200px;
+    margin: 120px auto 50px auto;
+    padding: 20px;
+	}
+
+	.hero-section h2 {
+    position: static;
+    float: none;
+    font-size: 60px;
+    color: white;
+    text-shadow: 3px 3px 5px rgba(0,0,0,.6);
+	}
+
+	.hero-subtitle {
+    position: static;
+    color: black;
+    font-size: 28px;
+    text-decoration: underline;
+    margin-top: 20px;
+    text-align: left;
+	}
+
+	.cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+	}
+
+	#Bounce,#Table {
+    position: static;
+    width: 350px;
+    padding: 20px;
+	}  
+
 
 }
 
